@@ -5,9 +5,13 @@ const path = require('path');
 
 const User = require('../models/User');
 
-// const serviceAccount = require(path.resolve(`C:\\Users\\ASUS\\Desktop\\GPMS\\GPMS_server\\firebase_kay\\${process.env.FIREBASE_SERVICE_ACCOUNT}`));
+// const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+
+// const serviceAccount = require(path.resolve(`C:\\Users\\ASUS\\Desktop\\GPMS\\GPMS_server\\firebase_kay\\${process.env.FIREBASE_SERVICE_ACCOUNT}`));
+const serviceAccount = require('/etc/secrets/firebase_key.json');
+
+
 
 // $env:GOOGLE_APPLICTION_CREDENTIALS="C:\Users\ASUS\Desktop\GPMS\GPMS_server\firebase_kay\gpms-aspu-firebase-adminsdk-fbsvc-9e7b095e6d.json"
 
